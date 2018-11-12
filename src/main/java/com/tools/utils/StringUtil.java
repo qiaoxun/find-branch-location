@@ -11,4 +11,17 @@ public class StringUtil {
             return true;
         return false;
     }
+
+    /**
+     * if the str contains the word lookingFor
+     * @param str
+     * @param lookingFor
+     * @return
+     */
+    public static boolean contains(String str, String lookingFor) {
+        if (isBlank(str)) {
+            return false;
+        }
+        return str.contains(lookingFor);
+    }
 }
